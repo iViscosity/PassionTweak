@@ -3,7 +3,7 @@
 	<identifier>PassionTweak</identifier>
 	<version>1.0.3</version>
 	<dependencies>
-		<li>Harmony</li>>
+		<li>Harmony</li>
 	</dependencies>
 	<loadAfter>
 		<li>MadSkills</li>
