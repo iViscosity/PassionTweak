@@ -13,6 +13,6 @@
 		</li>
 	</loadAfter>
 	<showCrossPromotions>true</showCrossPromotions>
-	<manifestUri></manifestUri>
+	<manifestUri>https://raw.githubusercontent.com/iViscosity/PassionTweak/master/About/Manifest.xml</manifestUri>
 	<downloadUri>https://github.com/iViscosity/PassionTweak/releases/latest</downloadUri>
 </Manifest>
