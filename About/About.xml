@@ -7,11 +7,11 @@
 	</supportedVersions>
 	<packageId>vis.PassionTweak</packageId>
 	<description>
-Allows you to tweak the learning rate of each passion level (no, minor, and major). RimWorld default is: 0.33, 1.00, 1.50. This mod's
+Allows you to tweak the learning rate of each passion level (no, minor, and major). RimWorld default is: 0.35, 1.00, 1.50. This mod's
 default is: 1.00, 1.25, 1.50.
 
-Each value can be set to any value between 0 and 1,000,000,000. Note that extremely high values may cause issues, and is not something
-that I can change.
+Each value can be set to any value between 10% and 1000%. Note that extremely high values may cause issues, and is not something
+that I plan on adding.
 	</description>
 	<modDependencies>
 		<li>

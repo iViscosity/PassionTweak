@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System;
+using System.Linq;
 using Verse;
 
 namespace PassionTweak
@@ -10,7 +11,7 @@ namespace PassionTweak
 	{
 		public static void Postfix(ref float __result, SkillRecord __instance, bool direct = false)
 		{
-			Log.Message($"Passion: {__instance.passion}, Factor: {__result}");
+			//Log.Message($"Passion: {__instance.passion}, Factor: {__result}");
 			if (!PassionTweak.Settings.Enabled) return;
 
 			switch (__instance.passion)
@@ -28,12 +29,12 @@ namespace PassionTweak
 					throw new NotImplementedException("Passion level " + __instance.passion);
 			}
 
+			// Let them handle saturation tweak(s).
+			if (PassionTweak.Settings.MadSkillsCompatibilityPatch) return;
+
 			if (!direct)
-			{
-				__result *= __instance.Pawn.GetStatValue(StatDefOf.GlobalLearningFactor, true);
 				if (__instance.LearningSaturatedToday)
 					__result *= 0.2f;
-			}
 		}
 	}
 }

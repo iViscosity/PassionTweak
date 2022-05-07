@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+	<identifier>PassionTweak</identifier>
+	<version>1.0.3</version>
+	<dependencies>
+		<li>
+			Harmony
+		</li>>
+	</dependencies>
+	<loadAfter>
+		<li>
+			MadSkills
+		</li>
+	</loadAfter>
+	<showCrossPromotions>true</showCrossPromotions>
+	<manifestUri></manifestUri>
+	<downloadUri>https://github.com/iViscosity/PassionTweak/releases/latest</downloadUri>
+</Manifest>

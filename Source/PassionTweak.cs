@@ -13,6 +13,10 @@ namespace PassionTweak
 #if DEBUG
 			Harmony.DEBUG = true;
 #endif
+
+			if (Harmony.HasAnyPatches("io.github.ratysz.madskills"))
+				Settings.MadSkillsCompatibilityPatch = true;
+
 			new Harmony("vis.rimworld.PassionTweak.main").PatchAll();
 		}
 

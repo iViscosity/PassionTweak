@@ -11,6 +11,7 @@ namespace PassionTweak
 		public float MinorPassionValue = 1.25f;
 		public float MajorPassionValue = 1.50f;
 
+		public bool MadSkillsCompatibilityPatch = false;
 
 		public override void ExposeData()
 		{
@@ -29,19 +30,32 @@ namespace PassionTweak
 
 			list.CheckboxLabeled("Vis.Enabled".Translate(), ref Enabled);
 
-			string str = NoPassionValue.ToString();
-			list.Label("Vis.NoPassionValue".Translate());
-			list.TextFieldNumeric(ref NoPassionValue, ref str);
+			list.Label("Vis.NoPassionValue".Translate((NoPassionValue).ToStringPercent("F0")));
+			NoPassionValue = Mathf.Round(list.Slider(100f * NoPassionValue, 10f, MinorPassionValue * 100 - 1)) / 100f;
+
 			list.Gap();
 
-			str = MinorPassionValue.ToString();
-			list.Label("Vis.MinorPassionValue".Translate());
-			list.TextFieldNumeric(ref MinorPassionValue, ref str);
+			list.Label("Vis.MinorPassionValue".Translate((MinorPassionValue).ToStringPercent("F0")));
+			MinorPassionValue = Mathf.Round(list.Slider(100f * MinorPassionValue, NoPassionValue * 100 + 1, MajorPassionValue * 100 - 1)) / 100f;
+
 			list.Gap();
 
-			str = MajorPassionValue.ToString();
-			list.Label("Vis.MajorPassionValue".Translate());
-			list.TextFieldNumeric(ref MajorPassionValue, ref str);
+			list.Label("Vis.MajorPassionValue".Translate((MajorPassionValue).ToStringPercent("F0")));
+			MajorPassionValue = Mathf.Round(list.Slider(100f * MajorPassionValue, 100f, 1000f)) / 100f;
+
+			if (list.ButtonText("Vis.ResetVanilla".Translate()))
+			{
+				NoPassionValue = 0.35f;
+				MinorPassionValue = 1f;
+				MajorPassionValue = 1.50f;
+			}
+
+			if (list.ButtonText("Vis.ResetMod".Translate()))
+			{
+				NoPassionValue = 1f;
+				MinorPassionValue = 1.25f;
+				MajorPassionValue = 1.50f;
+			}
 
 			list.End();
 		}

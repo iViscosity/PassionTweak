@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="PassionTweak.cs" />
     <Compile Include="Patch_SkillRecord.cs" />
+    <Compile Include="Patch_SkillUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>

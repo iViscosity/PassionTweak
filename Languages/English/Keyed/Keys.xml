@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<Vis.Enabled>Enabled</Vis.Enabled>
-	<Vis.NoPassionValue>No Passion Value</Vis.NoPassionValue>
-	<Vis.MinorPassionValue>Minor Passion Value</Vis.MinorPassionValue>
-	<Vis.MajorPassionValue>Major Passion Value</Vis.MajorPassionValue>
+	<Vis.NoPassionValue>No Passion Value: {0}</Vis.NoPassionValue>
+	<Vis.MinorPassionValue>Minor Passion Value: {0}</Vis.MinorPassionValue>
+	<Vis.MajorPassionValue>Major Passion Value: {0}</Vis.MajorPassionValue>
+	<Vis.ResetVanilla>Reset to Vanilla defaults</Vis.ResetVanilla>
+	<Vis.ResetMod>Reset to Mod defaults</Vis.ResetMod>
 </LanguageData>
