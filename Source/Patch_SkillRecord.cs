@@ -29,10 +29,7 @@ namespace PassionTweak
 					throw new NotImplementedException("Passion level " + __instance.passion);
 			}
 
-			// Let them handle saturation tweak(s).
-			if (PassionTweak.Settings.MadSkillsCompatibilityPatch) return;
-
-			if (!direct)
+			if (!direct && !PassionTweak.Settings.MadSkillsCompatibilityPatch)
 				if (__instance.LearningSaturatedToday)
 					__result *= 0.2f;
 		}
