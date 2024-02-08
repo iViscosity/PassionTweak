@@ -1,0 +1,17 @@
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Source\bin\Debug\PassionTweak.dll
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Source\bin\Debug\PassionTweak.pdb
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Source\bin\Debug\0Harmony.dll
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Source\bin\Debug\0Harmony.xml
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Source\obj\Debug\PassionTweak.csproj.CoreCompileInputs.cache
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Source\obj\Debug\PassionTweak.csproj.CopyComplete
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Source\obj\Debug\PassionTweak.dll
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Source\obj\Debug\PassionTweak.pdb
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Assemblies\PassionTweak.dll
+C:\Users\ivisc\Desktop\Rimworld Mods\PassionTweak\Assemblies\PassionTweak.pdb
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PassionTweak\Assemblies\PassionTweak.dll
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PassionTweak\Assemblies\PassionTweak.pdb
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PassionTweak\Source\obj\Debug\PassionTweak.csproj.AssemblyReference.cache
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PassionTweak\Source\obj\Debug\PassionTweak.csproj.CoreCompileInputs.cache
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PassionTweak\Source\obj\Debug\PassionTweak.csproj.CopyComplete
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PassionTweak\Source\obj\Debug\PassionTweak.dll
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PassionTweak\Source\obj\Debug\PassionTweak.pdb
