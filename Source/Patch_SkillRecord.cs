@@ -9,6 +9,7 @@ namespace PassionTweak
 	[HarmonyPatch(typeof(SkillRecord), nameof(SkillRecord.LearnRateFactor))]
 	public static class Patch_SkillRecord
 	{
+		private static bool MessageSent = false;
 		public static void Postfix(ref float __result, SkillRecord __instance, bool direct = false)
 		{
 			//Log.Message($"Passion: {__instance.passion}, Factor: {__result}");
@@ -26,7 +27,11 @@ namespace PassionTweak
 					__result = PassionTweak.Settings.MajorPassionValue;
 					break;
 				default:
-					throw new NotImplementedException("Passion level " + __instance.passion);
+					if (!MessageSent) { 
+						Log.Message("[PassionTweak][INFO] Passion level " + __instance.passion + " not supported by PassionTweak.");
+						MessageSent = true;
+					}
+					break;
 			}
 
 			if (!direct && !PassionTweak.Settings.MadSkillsCompatibilityPatch)
